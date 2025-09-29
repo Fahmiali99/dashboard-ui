@@ -28,7 +28,7 @@ git clone https://github.com/Fahmiali99/dashboard-ui.git
 ### 2. Navigate to the project directory:
 
 ```bash
-cd works-app
+cd dashboard-ui
 ```
 
 ### 3. Install the dependencies:
