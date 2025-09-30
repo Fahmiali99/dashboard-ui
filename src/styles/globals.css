@@ -1,11 +1,7 @@
 @import "tailwindcss";
 @import "flowbite";
 
-
-@theme {
-  --font-sans: var(--font-aileron), ui-sans-serif, system-ui, sans-serif;
-}
-
 body {
+  font-family: "Aileron", sans-serif;
   background: #DBE8F4;
 }
