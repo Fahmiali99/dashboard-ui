@@ -37,7 +37,7 @@ function Navigation() {
                         ))}
                     </NavbarCollapse>
 
-                    <button onClick={() => setOpen(!isOpen)} >
+                    <button onClick={() => setOpen(!isOpen)} title='Toggle Menu'>
                         <Icon
                             icon="jam:menu"
                             width={32}
