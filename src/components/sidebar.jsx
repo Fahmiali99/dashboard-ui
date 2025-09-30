@@ -12,6 +12,7 @@ function Sidebar() {
                 <Link
                     href={item.href}
                     key={index}
+                    aria-label={item.title}
                     className="w-full flex md:h-11 md:w-11 items-center justify-center rounded-full cursor-pointer transition-transform duration-300 hover:scale-110 "
                 >
                     <div className={router.pathname === item.href 
