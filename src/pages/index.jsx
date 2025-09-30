@@ -6,7 +6,7 @@ import Charts from '@/components/dashboard/charts'
 function Dashboard() {
   return (
     <Layout>
-      <div className='space-y-4 md:!space-y-6 lg:!space-y-6 xl:!space-y-10' >
+      <div className=' font space-y-4 md:!space-y-6 lg:!space-y-6 xl:!space-y-10' >
         <WidgetMenu />
         <Charts />
       </div>

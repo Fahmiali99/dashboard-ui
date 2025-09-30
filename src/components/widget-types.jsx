@@ -27,7 +27,6 @@ const TrackedProgressBar = ({ percentage, result, desc }) => {
         >
             <div className="w-full bg-[#EBF0F5] rounded-full h-[7px]" />
             <div className="absolute top-0 left-0 bg-[#1767B2] h-[7px] rounded-full" style={{ width: `${percentage}%` }}/>
-
             <div style={popoverStyle} className="absolute -top-[30px] transition-none">
                 <div className="relative bg-white border border-gray-200 rounded-lg py-1 px-3 text-xs font-bold text-gray-900 shadow-md">
                     {result}
@@ -121,16 +120,16 @@ function WidgetTypes({ type, item_chart }) {
             content={
                 <div className="p-3 space-y-2 text-gray-900 text-sm w-64">
                     <h3 className="font-semibold">Info {item_chart?.title}</h3>
-                    <p className="text-gray-600">Laporan ini membantu menavigasi pertumbuhan kumulatif aktivitas.</p>
-                    <a href="#" className="flex items-center font-medium text-blue-600 hover:underline text-xs">Baca lebih lanjut</a>
+                    <p className="text-gray-600">This report helps navigate the cumulative growth of activity.</p>
+                    <a href="#" className="flex items-center font-medium text-blue-600 hover:underline text-xs">Read more</a>
                 </div>
             }
-            placement="bottom"
+            placement="left"
             trigger="click" 
             style="light"
             className="!bg-white !border !border-gray-200 !rounded-lg !shadow-xl !max-w-xs"
         >
-            <div className="text-2xl text-gray-900 cursor-pointer">
+            <div className="text-2xl text-gray-900 hover:text-[#1767B2] cursor-pointer">
                 {item_chart.icon} 
             </div>
         </Tooltip>

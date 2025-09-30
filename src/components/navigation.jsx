@@ -30,7 +30,7 @@ function Navigation() {
                             <NavbarLink 
                                 key={index} 
                                 href={item.href} 
-                                className={router.pathname === item.href ? '!text-[#1767B2]' : '!text-[#000000]'}
+                                className={router.pathname === item.href ? '!text-[#1767B2]' : '!text-[#000000] hover:!text-[#1767B2]'}
                             >
                                 {item.name}
                             </NavbarLink>
@@ -42,7 +42,7 @@ function Navigation() {
                             icon="jam:menu"
                             width={32}
                             height={32}
-                            className={`${isOpen ? "rotate-90" : ""} transition-transform duration-300`}
+                            className={`${isOpen ? "rotate-90" : ""} transition-transform duration-300 hover:!text-[#1767B2]`}
                         />
                     </button>
                 </div>
