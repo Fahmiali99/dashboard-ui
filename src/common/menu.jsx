@@ -11,5 +11,5 @@ export const sidebarMenu = [
     { icon: <Icon icon="basil:bag-outline"/>, href: '#' },
     { icon: <Icon icon="basil:chart-pie-outline"/>, href: '#' },
     { icon: <Icon icon="ant-design:pie-chart-outlined"/>, href: '#' },
-    { icon: <Icon icon="mdi:chart-box-outline"/>, href: '#' },
+    { icon: <Icon icon="basil:box-outline"/>, href: '#' },
 ];

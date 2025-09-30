@@ -51,15 +51,13 @@ function Navigation() {
             {isOpen && (
                 <div className="w-full p-4 block items-center md:hidden gap-2 mt-3 bg-blue-50 rounded-lg">
                     {navbarMenu.map((item, index) => (
-                        <div 
-                            key={index} 
-                            href={item.href} 
-                            className={router.pathname === item.href ? '!text-[#1767B2] py-2' : '!text-[#000000] py-2'}
-                        >
-                            <div className='flex items-center gap-2'>
-                                <span>{item.icon}</span>
-                                <span>{item.name}</span>
-                            </div>
+                        <div key={index} className={router.pathname === item.href ? '!text-[#1767B2] py-2' : '!text-[#000000] hover:!text-[#1767B2] py-2'}>
+                            <Link href={item.href}>
+                                <div className='flex items-center gap-2'>
+                                    <span>{item.icon}</span>
+                                    <span>{item.name}</span>
+                                </div>
+                            </Link>
                         </div>
                     ))}
                 </div>
