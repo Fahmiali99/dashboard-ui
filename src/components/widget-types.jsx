@@ -157,7 +157,7 @@ function WidgetTypes({ type, item_chart }) {
                         result={item_chart.chart_data?.chart_result}
                         desc={item_chart.chart_data?.desc}
                     />
-                    <p className="text-sm font-bold text-gray-900">{item_chart.chart_data?.desc}</p>
+                    <p className="text-xs font-bold text-gray-900">{item_chart.chart_data?.desc}</p>
                 </div>
             </div>
         )
