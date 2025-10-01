@@ -11,6 +11,7 @@ Live demo: [![Deploy with Vercel](https://vercel.com/button)](https://dashboard-
 - **Framework:** Next.js (JavaScript)
 - **Styling:** Tailwind CSS
 - **UI Components:** Flowbite React
+- **PWA** (Progressive Web App)
 - **Deployment:** Vercel
 
 ---
