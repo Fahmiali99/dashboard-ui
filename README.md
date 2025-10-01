@@ -1,4 +1,4 @@
-# Works App
+# Dashboard UI
 
 **Dashboard UI** is a modern web application built with **Next.js** and **JavaScript**, styled with **Tailwind CSS**, using **Flowbite React** for UI components, and deployed on **Vercel**.
 
