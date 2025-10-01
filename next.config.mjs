@@ -1,13 +1,26 @@
-/** @type {import('next').NextConfig} */
-import withPWA from 'next-pwa'
+import withPWAInit from 'next-pwa';
 
-const nextConfig = withPWA({
+const withPWA = withPWAInit({
+  dest: 'public',
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === 'development',
+  
+  buildExcludes: [
+    /middleware-manifest\.json$/,
+    /_buildManifest\.js$/,
+    /_ssgManifest\.js$/,
+  ],
+  
+  manifestTransforms: [(manifest) => {
+    return {
+      manifest: manifest.filter(entry => 
+        !entry.url.includes('dynamic-css-manifest.json')
+      ),
+    };
+  }],
+});
+
+export default withPWA({
   reactStrictMode: true,
-  pwa: {
-    dest: 'public',
-    register: true,
-    skipWaiting: true,
-  },
-})
-
-export default nextConfig
+});

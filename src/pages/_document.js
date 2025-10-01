@@ -1,15 +1,18 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en" >
+    <Html lang="id">
       <Head>
-        <title>Dashboard UI</title>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="Dashboard UI is modern web application" />
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <meta name="theme-color" content="#4f46e5" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Dashboard" />
+        <link rel="apple-touch-icon" href="/assets/icon-192x192.png" />
       </Head>
-      <body className="antialiased">
+      <body>
         <Main />
         <NextScript />
       </body>
