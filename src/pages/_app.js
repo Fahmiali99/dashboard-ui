@@ -1,14 +1,6 @@
-import { useEffect } from "react";
-import "@/styles/globals.css";
+import "../styles/globals.css";
+import "flowbite";
 
-export default function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("/sw.js")
-        .then(() => console.log("Service Worker Registered"));
-    }
-  }, []);
-
+export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
